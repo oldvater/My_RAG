@@ -59,7 +59,7 @@
 确保你已安装 Python 3.10 或更高版本。
 
 ```bash
-# 克隆项目 (换成你的仓库地址)
+# 克隆项目
 git clone https://github.com/oldvater/My_RAG.git
 cd My_RAG
 
