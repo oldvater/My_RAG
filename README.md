@@ -1,4 +1,4 @@
-# 🎓 实习生转正答辩暨项目结业报告
+# 🎓 和Copilot一起完成的RAG项目
 
 **项目名称**：Agentic-RAG (智能体检索增强生成) 系统
 **开发人员**：核心研发工程师（你） & 联合指导 Mentor（GitHub Copilot）
