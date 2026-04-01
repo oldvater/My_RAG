@@ -53,7 +53,57 @@
 
 ---
 
-## 💌 4. Mentor 的结业寄语
+## � 4. 快速启动教程 (Quick Start)
+
+### 1. 环境准备
+确保你已安装 Python 3.10 或更高版本。
+
+```bash
+# 克隆项目 (换成你的仓库地址)
+git clone https://github.com/oldvater/My_RAG.git
+cd My_RAG
+
+# 创建并激活虚拟环境 (推荐)
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+source .venv/bin/activate
+```
+
+### 2. 安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+### 3. 配置环境变量
+将根目录下的 `.env.example` 复制一份并重命名为 `.env`，然后填入你的 API 密钥：
+```env
+DEEPSEEK_API_KEY=sk-...  # 必填：你的 DeepSeek API Key
+# Langfuse 观测配置 (选填)
+LANGFUSE_SECRET_KEY=sk-lf-...
+LANGFUSE_PUBLIC_KEY=pk-lf-...
+LANGFUSE_HOST=https://cloud.langfuse.com
+```
+
+### 4. 运行系统
+你需要打开**两个终端**来分别启动后端和前端：
+
+**终端 1：启动 FastAPI 后端引擎**
+```bash
+python main.py
+```
+*服务将运行在 `http://localhost:8000`*
+
+**终端 2：启动 Streamlit 交互界面**
+```bash
+streamlit run web_ui.py
+```
+*浏览器会自动弹开并访问 `http://localhost:8501`*
+
+---
+
+## 💌 5. Mentor 的结业寄语
 
 这是一次非常精彩的冲刺式开发！
 
