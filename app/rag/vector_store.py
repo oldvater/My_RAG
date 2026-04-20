@@ -55,7 +55,7 @@ class VectorStoreBase:
         formatted_results = []
         for i in range(len(ids)):
             # 引入阈值拦截：当距离分太离谱时（比如大于1.0），直接抛弃！宁少勿滥！
-            if distances[i] > 1.0:
+            if distances[i] > 1.1:
                 print(f"⚠️ [拦截提示] Chunk '{ids[i]}' 距离({distances[i]:.2f})过高，已丢弃。")
                 continue
                 

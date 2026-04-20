@@ -2,7 +2,7 @@
 
 import re
 
-def sliding_window_chunker(text: str, chunk_size: int = 500, overlap: int = 50) -> list[str]:
+def sliding_window_chunker(text: str, chunk_size: int = 500, overlap: int = 100) -> list[str]:
     """
     将长文本切分为带有重叠区域的多个文本块。
     
